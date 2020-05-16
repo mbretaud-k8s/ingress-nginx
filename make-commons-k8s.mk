@@ -47,6 +47,7 @@ apply:
 delete:
 	kubectl delete -f mandatory.yaml --force --ignore-not-found
 	kubectl delete -f cloud-generic.yaml --force --ignore-not-found
+	kubectl delete validatingwebhookconfiguration ingress-nginx-admission
 
 ###############################################
 #
